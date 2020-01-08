@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
         color_gender_lives = description.to_s
         names.each do |pigeon|
           if pigeon_list[pigeon]
+            p pigeon_list
             if pigeon_list[pigeon][key]
               pigeon_list[pigeon][key] << [color_gender_lives]
             else 
