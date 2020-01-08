@@ -4,6 +4,7 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {} 
   data.each do |key, value| 
     value.each do |description, names|
+      print description
         color_gender_lives = description.to_s
         names.each do |pigeon|
           if pigeon_list[pigeon]
