@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
             if pigeon_list[pigeon][key]
               pigeon_list[pigeon][key] << color_gender_lives
             else 
-              pigeon_list[pigeon][key] = color_gender_lives
+              pigeon_list[pigeon][key] = [color_gender_lives]
             end 
           else 
             pigeon_list[pigeon] = {key => [color_gender_lives]}
